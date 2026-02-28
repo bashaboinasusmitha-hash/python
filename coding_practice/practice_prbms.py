@@ -1,0 +1,26 @@
+#swapping of numbers
+a=3
+b=5
+temp=a
+a=b
+b=temp
+print(a)
+print(b)
+a,b=3,4
+b,a=a,b
+print(a,b)
+li=[4,5]
+li[0],li[1]=li[1],li[0]
+print(li)
+li=[4,6,2,1]
+j=0
+li[j],li[j+1]=li[j+1],li[j]
+print(li)
+li=[4,6,2,1]
+j=1
+li[j],li[j+1]=li[j+1],li[j]
+print(li)
+li=[4,6,2,1]
+j=2
+li[j],li[j+1]=li[j+1],li[j]
+print(li)
