@@ -1,4 +1,4 @@
-#traversing a loop with tuples
+#1.traversing a loop with tuples
 t=("suma",True,3,4,4.0)
 for i in t:
     print(i)
@@ -6,7 +6,7 @@ t=("suma",True,3,4,4.0)
 n=len(t)
 for i in range(n):
     print(t[i])
-#using conditional statements 
+#2.using conditional statements 
 t=("suma",True,3,4,4.0)
 if 3 in t:
     print("number exists")
