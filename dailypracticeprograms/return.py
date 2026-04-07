@@ -1,4 +1,4 @@
-'''def func(s1,s2):
+def func(s1,s2):
     if s1==s2:
         return True
     return False
@@ -46,7 +46,7 @@ def fun(dic1,dic2):
 dic1={1:2,3:6}
 dic2={1:2,3:2} 
 ans=func(dic1,dic2)
-print(ans)'''      
+print(ans)
 #Anagrams:
 s1="abcd"
 s2="cba"
