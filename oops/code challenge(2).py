@@ -58,10 +58,10 @@ t1.to_fahrenheit()
 #Challenge question:
 class LibraryBook:
     def __init__(self):
-        self.__availability=True
+        self.__availability=False
     def borrow_book(self):
         if self.__availability:
-            self.__availability=False
+            #self.__availability=True
             print("Book Borrowed")
         else:
             print("Book not available!")
