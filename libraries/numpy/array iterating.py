@@ -55,4 +55,25 @@ and in order to change in nditer() we pass flags=["buffered"]'''
 arr=np.array([1,2,3])
 for i in np.nditer(arr,flags=["buffered"],op_dtypes=['S']):
     print(i)#np.bytes_(b'1') np.bytes_(b'2') np.bytes_(b'3')
+#iterating with step size:
+arr=np.array([[1,2,3],[5,6,7]])
+for i in np.nditer(arr[:,::2]):
+    print(i)#1 3 5 7
 #Enumerated iteration using ndenumerater():
+'''It is used to iterate through a NumPy array with index + value'''
+arr=np.array([1,2,3])
+for index,i in np.ndenumerate(arr):
+    print(index,i)#(0,) 1 (1,) 2 (2,) 3
+arr=np.array([[1,3,4],[5,6,8]])
+for index ,i in np.ndenumerate(arr):
+    print(index,i)
+#output:
+'''(0, 0) 1
+(0, 1) 3
+(0, 2) 4
+(1, 0) 5
+(1, 1) 6
+(1, 2) 8'''
+arr=np.array(["a","b","c"])
+for i in arr:
+    print("Hello "+ i)#Hello a Hello b Hello c
