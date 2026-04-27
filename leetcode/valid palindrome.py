@@ -11,8 +11,8 @@ for i in range(n):
         res+=s[i]
 ans=""
 m=len(res)
-for i in range(m-1,-1,-1):
-    ans+=res[i]
+for i in (res[::-1]):
+    ans+=i
 if res==ans:
     print(True)
 else:
