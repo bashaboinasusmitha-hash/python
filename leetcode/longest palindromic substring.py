@@ -4,12 +4,14 @@ Example 1:
 Input: s = "babad"
 Output: "bab"
 Explanation: "aba" is also a valid answer.'''
-s="ac"
+s="babad"
 n=len(s)
 longest=''
 for i in range(n):
     for j in range(i+1,n+1):
+        #print(i,j)
         sub=s[i:j]
+        print(sub)
         if sub==sub[::-1]:
             if len(sub)>len(longest):
                 longest=sub
