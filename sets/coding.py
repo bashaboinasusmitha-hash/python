@@ -49,7 +49,7 @@ for i in lst:
         count=(i)
         break
 print(count)
-#more repeating elements:
+#1,more repeating elements:
 li = [5,3,4,3,5,6,5]
 s=set(li)
 max_count=0
@@ -63,3 +63,6 @@ if max_count>1:
     print(f"most repeating element is {result}")
 else:
     print("no repeating elements")
+
+s={1,2,3,4,5}
+print(s)
