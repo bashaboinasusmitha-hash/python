@@ -9,3 +9,17 @@ for i in range(n):
         if len(temp)==3:
             ans.append(temp)
 print(ans)
+#sliding window approach printing the subarys whose length is k:
+nums=[5,9,1,8]
+n=len(nums)
+k=3
+l=0
+temp=[]
+ans=0
+for r in range(n):
+    temp.append(nums[r])
+    if r-l==k:
+        temp.pop(0)
+        l+=1
+    if r-l+1==k:
+        print(temp)
