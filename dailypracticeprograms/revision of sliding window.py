@@ -23,3 +23,18 @@ for r in range(n):
         l+=1
     if r-l+1==k:
         print(temp)
+#finding highest subarray sub whose lenght is k:
+nums=[5,9,1,8]
+n=len(nums)
+l=0
+temp=0
+ans=0
+k=3
+for r in range(n):
+    temp+=nums[r]
+    if r-l==k:
+        temp-=nums[l]
+        l+=1
+    if r-l+1==k:
+        ans=max(ans,temp)
+print(ans)#18
