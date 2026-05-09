@@ -122,3 +122,8 @@ info_person(1,2,name="susmitha",age=20,dept="csm")
 age 20
 dept csm
 (1, 2)'''
+def info_person(*args,**kwags):
+    for key,value in kwags.items():
+        print(key,value)
+    print(args)#(1,2)
+info_person(1,2,name="THARUN BASHABOINA",age=24,dept="ECE")
