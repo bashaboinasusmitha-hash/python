@@ -88,6 +88,15 @@ add(12,2,5,name="susmitha")
         c+=i
     print(c)
 add(12,2,5)'''
+'''def add(*numbers,name):
+    c=0
+    print(numbers)
+    print(name)
+    for i in numbers:
+        c+=i
+    print(c)
+add(1,2,3,"susmitha")'''
+#the above code gives error as we are not giving keyword .it assumes all the arguments in function call belongs to numbers.
 #here in below code it taking name as 12 and numbers as (2,7)
 def add(name,*numbers):
     c=0
