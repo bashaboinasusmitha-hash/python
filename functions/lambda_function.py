@@ -21,3 +21,32 @@ print(greet())
 #Lambda with Conditional Expression
 largest=lambda a,b: a if a>b else b
 print(largest(4,3))#4
+#lambda function with higher order functions like :map(),reduce(),filter() etc.
+'''lambda with map():
+map() function applies condition to every element.'''
+numbers=[1,4,3,2]
+mul=list(map(lambda x: x*2,numbers))
+print(mul)#[2 8 6 4]
+#lambda with filter(): this function applies to elements based on the condition:
+numbers=[1,3,4,2,6]
+result=list(filter(lambda x:x%2==0,numbers))
+print(result)#[4 2 6]
+#lambda with sorted(): used for sorting.
+li=[("ravi",20),("tharun",19),("rama",20)]
+res=sorted(li,key=lambda x:x[1])
+print(res)#[('tharun', 19), ('ravi', 20), ('rama', 20)]
+li.sort(key=lambda x:x[1])
+print(li)#[('tharun', 19), ('ravi', 20), ('rama', 20)]
+li.sort(key=lambda x:x[0])
+print(li)#[('rama', 20), ('ravi', 20), ('tharun', 19)]
+#sorting based on length of words .
+li=["susmitha","ravi","tharun","ramadevi"]
+li.sort(key=lambda x:len(x))
+print(li)#['ravi', 'tharun', 'susmitha', 'ramadevi']
+#printing in descending order:
+li.sort(key=lambda x:len(x),reverse=True)
+print(li)#['susmitha', 'ramadevi', 'tharun', 'ravi']
+#case sensitive:
+li=["Susmitha","ravi","tharun","Ramadevi"]
+li.sort(key=lambda x: x.lower())
+print(li)#['Ramadevi', 'ravi', 'Susmitha', 'tharun']
