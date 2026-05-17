@@ -37,3 +37,23 @@ for i in word:
     if i in vowels:
         count+=1
 print(count)
+#Remove spaces from a string
+sent="helo how r u"
+ans=""
+for i in sent:
+    if i!=" ":
+        ans+=i
+print(ans)
+#Count how many times a character appears in a string.
+word="susmiithaa"
+dic={}
+for i in word:
+    if i in dic:
+        dic[i]+=1
+    else:
+        dic[i]=1
+print(dic)
+#Replace one word with another in a sentence:
+sent="hey hello susmitha."
+ans=sent.replace("hello","how r u")
+print(ans)
