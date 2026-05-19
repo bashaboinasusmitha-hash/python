@@ -27,3 +27,9 @@ if year%4==0  and year%100!=0 or year%400==0:
     print("year is a leap year")
 else:
     print("not an leap year.")
+#print dictionary keys by built in functions:
+dic={"name":"susmitha","age":23,"branch":"csm"}
+for i in dic.values():
+    print(i)
+for i,j in dic.items():
+    print(i,":",j)
