@@ -57,3 +57,5 @@ print(dic)
 sent="hey hello susmitha."
 ans=sent.replace("hello","how r u")
 print(ans)
+res=sent.replace("susmitha","Tharun")
+print(res)
