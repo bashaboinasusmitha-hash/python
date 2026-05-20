@@ -34,3 +34,13 @@ print(li)
 #descending order:
 c=sorted(li,reverse=True)
 print(c)
+#Find duplicate elements in a list.
+li=[5,6,3,2,1,6,5]
+duplicate=[]
+a=[]
+for i in li:
+    if i not in duplicate:
+        duplicate.append(i)
+    else:
+        a.append(i)
+print(a)
