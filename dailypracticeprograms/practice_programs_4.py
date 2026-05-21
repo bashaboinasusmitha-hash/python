@@ -44,3 +44,10 @@ for i in li:
     else:
         a.append(i)
 print(a)
+#Merge two lists.
+li_1=[1,6,7,8,2,8]
+li_2=[3,5,1,9,0,2]
+li=li_1+li_2
+print(li)
+li_1.extend(li_2)
+print(li_1)
