@@ -17,3 +17,29 @@ for i in li:
     elif i!=max and i>second:
         second=i
 print(second)
+#Tuple Programs
+#Create a tuple and print its elements.
+tup=(2,4,"susmitha",7.9,True)
+print(tup)
+#Count occurrences of an element in tuple.
+tup=(2,4,6,0,2,3,5,6,2)
+dic={}
+for i in tup:
+    if i not in dic:
+        dic[i]=1
+    else:
+        dic[i]+=1
+print(dic)
+#Find index of an element in tuple.
+tup=(2,4,6,0,2,3,5,6,2)
+print(tup.index(2))#prints only first occured number index.
+for i in range(len(tup)):
+    print(tup[i],i)
+#Convert tuple into list.
+tup=(2,4,6,0,2,3,5,6,2)
+print(list(tup))
+#Create nested tuples and access inner elements.
+tup=(2,4,5,2,(6,7,9),(2,3,5,1),0,8)
+print(tup[4])
+print(tup[4][1])
+print(tup[4][2])
