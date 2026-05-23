@@ -43,3 +43,30 @@ tup=(2,4,5,2,(6,7,9),(2,3,5,1),0,8)
 print(tup[4])
 print(tup[4][1])
 print(tup[4][2])
+#set programs:
+'''Create two sets and perform:
+Union
+Intersection
+Difference'''
+s1={1,3,2,7,8,3,9}
+s2={3,6,1,0,5,6,2,8}
+print(s1.union(s2))
+print(s1|s2)
+print(s1.intersection(s2))
+print(s1-s2)
+#Remove duplicate elements from a list using set.
+s1=[4,5,7,9,4,6,4,5,8,9]
+s2=set(s1)
+print(s2)
+#Check whether an element exists in a set.
+s1={1,3,2,7,8,3,9}
+if 10 in s1:
+    print("True")
+else:
+    print("False")
+#Add and remove elements from set.
+s1={1,3,2,7,8,3,9}
+s1.add(10)
+print(s1)
+s1.discard(8)
+print(s1)
