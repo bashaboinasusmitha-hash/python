@@ -34,3 +34,31 @@ for i in number:
     print(i)
     sum+=int(i)
 print(sum)
+#while loop:
+#Reverse a number.
+number=67
+rev=0
+while number>0:
+    digits=number%10
+    rev=rev*10+digits
+    number=number//10
+print(rev)
+#Check palindrome number.
+number=505
+rev=0
+x=number
+while number>0:
+    digits=number%10
+    rev=rev*10+digits
+    number=number//10
+if rev==x:
+    print("Numberis a palindrome")
+else:
+    print("Not a palindrome.")
+#Count number of digits in a number.
+number=3456
+count=0
+while number>0:
+    number=number//10
+    count+=1
+print(count)
