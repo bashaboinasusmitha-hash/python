@@ -62,3 +62,16 @@ while number>0:
     number=number//10
     count+=1
 print(count)
+#Find Armstrong number.
+number=153
+temp=number
+lenght=len(str(number))
+sum=0
+while temp>0:
+    digit=temp%10
+    sum+=digit**lenght
+    temp=temp//10
+if sum==number:
+    print("Armstrong number.")
+else:
+    print("Not an Armstrong number.")
