@@ -22,3 +22,17 @@ for i in string:
 for i in dic:
     if dic[i]==1:
         print(i)
+#Find the Second Largest Element in a List
+li=[7,7,7,7,7,7,7,7,7,7]
+largest=li[0]
+second_largest=float('-inf')
+for i in li:
+    if i>largest:
+        second_largest=largest
+        largest=i
+    elif i>second_largest and i!=largest:
+        second_largest=i
+if second_largest==float('-inf'):
+    print("no second largest element")
+else:
+    print("Second largest element is:", second_largest)
