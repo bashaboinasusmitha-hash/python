@@ -36,3 +36,16 @@ if second_largest==float('-inf'):
     print("no second largest element")
 else:
     print("Second largest element is:", second_largest)
+#Find Duplicate Elements in a List
+li=[1,2,3,4,5,6,7,8,9,1,2,1]
+dic={}
+li_1=[]
+for i in li:
+    if i not in dic:
+        dic[i]=1
+    else:
+        if i not in li_1:
+            li_1.append(i)
+if len(li_1)==0:
+    print("no duplicate elements")
+print(li_1)
