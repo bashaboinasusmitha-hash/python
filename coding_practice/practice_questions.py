@@ -49,3 +49,15 @@ for i in li:
 if len(li_1)==0:
     print("no duplicate elements")
 print(li_1)
+#Find the Missing Number
+li=[1,2,3,5,6]
+n=len(li)+1
+expected_sum=n*(n+1)//2
+actual_sum=sum(li)
+aans=expected_sum-actual_sum
+print(aans)
+#different approach
+li=[1,2,3,5,6]
+for i in range(1,max(li)+1):
+    if i not in li:
+        print(i)
