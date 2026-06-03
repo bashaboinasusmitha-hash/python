@@ -61,3 +61,25 @@ li=[1,2,3,5,6]
 for i in range(1,max(li)+1):
     if i not in li:
         print(i)
+#find whether given two strings are anagrams or not
+string1="listeni"
+string2="silento"
+dic_1={}
+dic_2={}
+if len(string1)!=len(string2):
+    print("given two strings are not anagrams")
+else:
+    for i in string1:
+        if i not in dic_1:
+            dic_1[i]=1
+        else:
+            dic_1[i]+=1
+    for j in string2:
+        if j not in dic_2:
+            dic_2[j]=1
+        else:
+            dic_2[j]+=1
+    if dic_1==dic_2:
+        print("given two strings are anagrams")   
+    else:
+        print("given two strings are not anagrams")       
