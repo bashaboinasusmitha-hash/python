@@ -82,4 +82,23 @@ else:
     if dic_1==dic_2:
         print("given two strings are anagrams")   
     else:
-        print("given two strings are not anagrams")       
+        print("given two strings are not anagrams")
+#find the first repeating character:
+string="programming"
+dic={}
+for i in string:
+    if i not in dic:
+        dic[i]=1
+    else:
+        dic[i]+=1
+for i in dic:
+    if dic[i]!=1:
+        print(i)
+        break
+string = "programming"
+seen = set()
+for ch in string:
+    if ch in seen:
+        print(ch)
+        break
+    seen.add(ch)
