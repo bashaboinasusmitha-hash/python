@@ -22,3 +22,11 @@ def rectangle(length,breadth):
     return area
 a=rectangle(5,2)
 print(a)
+#Built-in functions:
+#len() Function
+'''Write a program using len() to find the length of a string entered by the user.'''
+def length(name):
+    n=len(name)#8
+    return n
+a=length("susmitha")
+print(a)
