@@ -30,3 +30,11 @@ def length(name):
     return n
 a=length("susmitha")
 print(a)
+# max() and min()
+'''Write a program to find the maximum and minimum values in a list using built-in functions.'''
+def min_max(*args):
+    a=max(args)
+    b=min(args)
+    return a,b
+li_1=min_max(1,6,9,3,2)
+print(li_1)
