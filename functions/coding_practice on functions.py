@@ -38,3 +38,10 @@ def min_max(*args):
     return a,b
 li_1=min_max(1,6,9,3,2)
 print(li_1)
+#sum() Function
+'''Write a program to calculate the sum of elements in a list using sum()'''
+def add(*args):
+    a=sum(args)
+    return a
+x=add(1,2,3,4)
+print(x)#10
