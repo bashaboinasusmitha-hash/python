@@ -1,0 +1,35 @@
+arr=[1,3,2,4,6]
+print(arr*2)#[1,3,2,4,6,1,3,2,4,6]
+print(2*3**3)#54 here first 3**3=27 then 2*27=54
+s="pop"
+n=len(s)
+s_1=''
+'''s_1=""
+for i in s[::-1]:
+    s_1+=i
+if s==s_1:
+    print("palindrome")
+else:
+    print("not an palindrome")
+s_1=s[::-1]
+if s_1==s[::-1]:
+    print("palindrome")'''
+for i in range(n-1,-1,-1):
+    s_1+=s[i]
+if s_1==s:
+    print("palindrome")
+else:
+    print("not palindrome")
+#finding a number is palindrome or not:
+num=343
+num_1=num
+rev=0
+while num>0:
+    digits=num%10
+    rev=rev*10+digits
+    num=num//10
+print(rev)
+if rev==num_1:
+    print("yes")
+else:
+    print("no")
