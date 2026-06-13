@@ -33,3 +33,11 @@ if rev==num_1:
     print("yes")
 else:
     print("no")
+#prime checker:
+number=7
+for i in range(2,number-1):
+    if number%i!=0:
+        print("Prime")
+        break
+else:
+    print("not prime")
