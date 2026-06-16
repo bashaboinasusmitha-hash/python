@@ -50,3 +50,12 @@ for i in range(2,n+1):
             count+=1
     if count==0:
         print(i,end=" ")
+print()
+#Remove duplicate characters from a string while maintaining order
+s="programming"
+n=len(s)
+s_1=""
+for i in s:
+    if i not in s_1:
+        s_1+=i
+print(s_1)
