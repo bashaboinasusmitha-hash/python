@@ -35,12 +35,15 @@ else:
     print("no")
 #prime checker:
 number=7
-for i in range(2,number-1):
-    if number%i!=0:
-        print("Prime")
-        break
+if number<=1:
+    print("Not prime")
 else:
-    print("not prime")
+    for i in range(2,number-1):
+        if number%i==0:
+            print("Not Prime")
+            break
+    else:
+        print("prime")
 #Find all prime numbers between 1 and N.
 n=20
 for i in range(2,n+1):
